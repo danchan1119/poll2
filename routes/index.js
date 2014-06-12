@@ -5,7 +5,7 @@ if (process.env.VCAP_SERVICES) {
    var env = JSON.parse(process.env.VCAP_SERVICES);
    db = mongoose.createConnection(env['mongodb-2.2'][0].credentials.url);
 } else {
-   db = mongoose.createConnection('mongodb://admin:Kkf3HCK1cfCx@' + process.env.OPENSHIFT_MONGODB_DB_HOST + ':' + parseInt(process.env.OPENSHIFT_MONGODB_DB_PORT) + '/', 'pollsapp');
+   db = mongoose.createConnection('mongodb://admin:Kkf3HCK1cfCx@' + process.env.OPENSHIFT_MONGODB_DB_HOST, 'pollsapp');
 }
 
 // Get Poll schema and model
