@@ -28,9 +28,9 @@
   "devDependencies": {},
   "bundleDependencies": [],
   "private": true,
-  "main": "server.js",
+  "main": "app.js",
   "scripts": {
-    "start": "node server.js"
+    "start": "node app.js"
   },
   "bugs": {
     "url": "https://github.com/openshift/origin-server/issues"
